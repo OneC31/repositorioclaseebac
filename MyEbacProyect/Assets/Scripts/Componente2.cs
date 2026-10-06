@@ -3,9 +3,13 @@ using UnityEngine;
 public class Componente2 : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Awake()
     {
         
+    }
+    void Start()
+    {
+        Debug.Log(Componente1.Miobjeto.name);
     }
 
     // Update is called once per frame
