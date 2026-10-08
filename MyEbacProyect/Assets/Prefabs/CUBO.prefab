@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1048647233007806476}
   - component: {fileID: 3882272153335194258}
   - component: {fileID: 3339671247251409025}
+  - component: {fileID: -4718141303037921428}
   m_Layer: 0
   m_Name: CUBO
   m_TagString: Untagged
@@ -140,3 +141,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-4718141303037921428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298610424128559501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e95a2c9da9fdcee4794685ddaa8c5c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::McolorFuncionAwake

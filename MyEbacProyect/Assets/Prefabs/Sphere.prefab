@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1131666788841624316}
   - component: {fileID: 5880449441324063258}
   - component: {fileID: 5277209119687251605}
+  - component: {fileID: 8454079082928606517}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -112,3 +113,15 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8454079082928606517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8703334847115345654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b651662835dd844baf66ff855b1328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::McolorFuncionUpdate
