@@ -1,34 +1,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CubeSpawner : MonoBehaviour
+
+public class SferaUpdate : MonoBehaviour
 {
-    public GameObject cubePrefab; // Prefab del cubo a instanciar
-    public List<GameObject> listaCubes;
+    public GameObject SPHEREM6;
+    public List<GameObject> listaEsferas;
     public float FactorDeEscalamiento;
-    public int numberofCubes = 4;
+    public int numberofEsferas = 4;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        listaCubes = new List<GameObject>();
-        
+        listaEsferas = new List<GameObject>();
     }
 
     // Update is called once per frame
     void Update()
+     //creando esfera
     {
-        numberofCubes++;
-        GameObject tempGameObject = Instantiate<GameObject>(cubePrefab);
-        tempGameObject.name = "Cube" + numberofCubes;
-        Color c =new Color(Random.value, Random.value, Random.value);
-        tempGameObject.GetComponent<MeshRenderer>().material.color = c;
+        numberofEsferas++;
+        GameObject tempGameObject = Instantiate<GameObject>(SPHEREM6);
+        tempGameObject.name = "Sphere";
         tempGameObject.transform.position = Random.insideUnitSphere;
+        
 
-        listaCubes.Add(tempGameObject);
+
+        listaEsferas.Add(tempGameObject);
         List<GameObject> objetosparaeliminar = new List<GameObject>();
-         foreach (GameObject go in listaCubes)
+        foreach (GameObject go in listaEsferas)
+
         {
             float escala = go.transform.localScale.x;
+
             escala *= FactorDeEscalamiento;
             go.transform.localScale = Vector3.one * escala;
             
@@ -36,11 +40,14 @@ public class CubeSpawner : MonoBehaviour
             {
                 objetosparaeliminar.Add(go);
             }
+           
         }
         foreach (GameObject go in objetosparaeliminar)
         {
-            listaCubes.Remove(go);
+            listaEsferas.Remove(go);
             Destroy(go);
         }
+        
+
     }
 }
