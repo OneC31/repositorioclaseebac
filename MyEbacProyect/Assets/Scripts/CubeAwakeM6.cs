@@ -2,16 +2,19 @@ using UnityEngine;
 
 public class CubeAwakeM6 : MonoBehaviour
 {
-    public GameObject CUBOM6;
 
+    public GameObject CUBOTE2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+
         // Crear cubo
-        GameObject tempGameObject = Instantiate<GameObject>(CUBOM6);
-        tempGameObject.name = "Cube";
-        
-           
+
+        GameObject tempGameObject = Instantiate<GameObject>(CUBOTE2);       
+        tempGameObject.name = "Cubeclone";
+        tempGameObject.transform.position = transform.position; 
+        tempGameObject.transform.rotation = transform.rotation;
+
     }
     void Start()
     {

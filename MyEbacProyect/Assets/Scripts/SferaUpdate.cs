@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SferaUpdate : MonoBehaviour
 {
-    public GameObject SPHEREM6;
+    public GameObject ESFEROTA2;
     public List<GameObject> listaEsferas;
     public float FactorDeEscalamiento;
     public int numberofEsferas = 4;
@@ -20,12 +20,10 @@ public class SferaUpdate : MonoBehaviour
      //creando esfera
     {
         numberofEsferas++;
-        GameObject tempGameObject = Instantiate<GameObject>(SPHEREM6);
+        GameObject tempGameObject = Instantiate<GameObject>(ESFEROTA2);
         tempGameObject.name = "Sphere";
         tempGameObject.transform.position = Random.insideUnitSphere;
-        
-
-
+            
         listaEsferas.Add(tempGameObject);
         List<GameObject> objetosparaeliminar = new List<GameObject>();
         foreach (GameObject go in listaEsferas)
