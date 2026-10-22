@@ -14,12 +14,10 @@ public class McolorFuncionAwake : MonoBehaviour
         //GetComponent<MeshRenderer>().material.color = c;
            
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
-    {  //variable boolean que se modifique cada fix update
+    {  
         var1 = true;
-        
-        
+        gameObject.GetComponent<MeshRenderer>().material.color = Color.white;   
     }
 
     // Update is called once per frame
@@ -30,17 +28,17 @@ public class McolorFuncionAwake : MonoBehaviour
     void FixedUpdate()
     {
         
-        if (var1 == true)
+        if (var1)
         {
-            var1 = false;
-            GetComponent<MeshRenderer>().material.color = Color.black;
             
+            GetComponent<MeshRenderer>().material.color = Color.black;
+            var1 = false;
         }
         else
         {
-            var1 = true;
+             
             GetComponent<MeshRenderer>().material.color = Color.white;
-            
+            var1 = true;
         }
         
     }

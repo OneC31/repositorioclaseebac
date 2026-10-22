@@ -26,7 +26,7 @@ public class getotherbolean : MonoBehaviour
     }
     void FixedUpdate()
     {
-         if  ( scriptsCUBO.var1 && scriptsCapsule.var1)
+         if  ( scriptsCUBO.var1 && scriptsCapsule.var1) 
         {
             gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
             Debug.Log("both true");
