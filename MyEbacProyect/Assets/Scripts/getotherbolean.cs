@@ -29,10 +29,12 @@ public class getotherbolean : MonoBehaviour
          if  ( scriptsCUBO.var1 && scriptsCapsule.var1)
         {
             gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
+            Debug.Log("both true");
         }
         else
         {
             gameObject.GetComponent<MeshRenderer>().material.color = Color.blue;
+            Debug.Log("one false");
         }
         
     }
