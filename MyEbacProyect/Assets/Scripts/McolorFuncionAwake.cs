@@ -33,13 +33,13 @@ public class McolorFuncionAwake : MonoBehaviour
         if (var1 == true)
         {
             var1 = false;
-            GetComponent<MeshRenderer>().material.color = Color.white;
+            GetComponent<MeshRenderer>().material.color = Color.black;
             
         }
         else
         {
             var1 = true;
-            GetComponent<MeshRenderer>().material.color = Color.black;
+            GetComponent<MeshRenderer>().material.color = Color.white;
             
         }
         
