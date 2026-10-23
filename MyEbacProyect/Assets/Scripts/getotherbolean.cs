@@ -5,7 +5,7 @@ public class getotherbolean : MonoBehaviour
 
     public GameObject CUBO;
     public GameObject Capsule;
-    bool varR;
+    public bool varR;
     public McolorFuncionAwake mcolorFuncionAwake ;
     public McolorFuncionAwake scriptsCUBO;
     public McolorFuncionAwake scriptsCapsule;
@@ -28,11 +28,13 @@ public class getotherbolean : MonoBehaviour
     {
          if  ( scriptsCUBO.var1 && scriptsCapsule.var1) 
         {
+            varR = true;
             gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
             Debug.Log("both true");
         }
         else
         {
+            varR = false;
             gameObject.GetComponent<MeshRenderer>().material.color = Color.blue;
             Debug.Log("one false");
         }
