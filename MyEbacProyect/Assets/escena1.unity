@@ -234,6 +234,7 @@ GameObject:
   - component: {fileID: 317418598}
   - component: {fileID: 317418601}
   - component: {fileID: 317418602}
+  - component: {fileID: 317418603}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -339,6 +340,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f177778b9c93ab349934a727a82bb2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::m8practica
+--- !u!114 &317418603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317418596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b95a9c59b958f7f44a5f79940ba96325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::clases
 --- !u!1 &409659084 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2579985902056622446, guid: b288b271147f5904d9aa6dce97946132, type: 3}
@@ -1557,7 +1570,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889928434}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25889b451f35ec344b860cd106b1ca10, type: 3}
   m_Name: 
